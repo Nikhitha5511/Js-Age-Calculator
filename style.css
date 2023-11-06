@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+
+    background-color:#fcf5f7;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(196, 85, 73);
+    margin:130px;
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+}
+
+.container * {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.inputs-wrapper {
+    background-color: #2F3C7E;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgb(189 200 213), -4px -4px 8px rgb(255 255 255);
+    margin-bottom: 50px;
+}
+
+input,
+button {
+    height: 50px;
+    background-color:#FBEAEB;
+    color: #080808;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgb(189 200 213), -4px -4px 8px rgb(255 255 255);
+}
+
+input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+button {
+    width: 30%;
+    float: right;
+}
+
+.outputs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputs-wrapper div {
+    height: 100px;
+    width: 100px;
+    background-color: #2F3C7E;
+    border-radius: 5px;
+    color: #000;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 4px 4px 8px rgb(189 200 213), -4px -4px 8px rgb(255 255 255);
+}
+
+span {
+    font-size: 30px;
+    font-weight: 500;
+    color:white;
+}
+
+p {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+ @keyframes example {
+    /* from {
+        transform: translate(0, 100px);
+        color: rgb(196, 85, 73);
+      
+    }
+    to {
+        transform: translate(-100px,0px);
+        color: green;
+      
+    } */
+    0%  { transform: translate(0, 0);
+        color:rgb(196, 85, 73);
+       }
+    25% { transform: translate(100px, 0);
+        color:green;
+    }
+    50% { transform: translate(100px, 140px);
+        color:rgb(158, 158, 218);
+    }
+    75% { transform: translate(0, 140px);
+        color:pink;
+    }
+    100%{ transform: translate(-140px, 0);
+        color:rgb(196, 85, 73);
+    }
+}
+
+ h1{
+    animation-name:example;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+    transform:translateX(-130px);
+
+ } 
+  
+  
